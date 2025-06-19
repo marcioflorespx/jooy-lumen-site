@@ -3,98 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jooy Lúmen - Lançamento Exclusivo</title>
+  <title>Jooy Lúmen - Apartamentos de Alto Padrão</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background-color: #002855;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      color: #002855;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, textarea, button {
-      padding: 12px;
-      font-size: 1em;
-    }
-    button {
-      background-color: #0070c0;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #005a99;
-    }
-    .footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    header { background: url('https://jooylumen.com.br/assets/hero.jpg') center/cover no-repeat; height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; }
+    header::after { content: ''; position: absolute; inset: 0; background: rgba(0, 40, 85, 0.6); }
+    header .hero-content { position: relative; text-align: center; color: #fff; padding: 0 20px; }
+    header h1 { font-size: 3rem; margin-bottom: 1rem; }
+    header p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+    .btn { display: inline-block; background-color: #ff6600; color: #fff; padding: 15px 30px; font-size: 1rem; border-radius: 5px; transition: background 0.3s; }
+    .btn:hover { background-color: #e65500; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .feature-item { background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: center; }
+    .feature-item img { width: 60px; margin-bottom: 15px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; }
+    .gallery img { width: 100%; height: auto; border-radius: 8px; }
+    .floorplans { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .floorplans img { width: 100%; max-width: 400px; border-radius: 8px; }
+    .whatsapp-fixed { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+    .whatsapp-fixed img { width: 60px; height: 60px; }
+    footer { background: #002855; color: #fff; text-align: center; padding: 20px; }
+    form { display: grid; gap: 15px; }
+    input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+    textarea { resize: vertical; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Jooy Lúmen - Seu novo apartamento em Campo Grande</h1>
-    <p>Conforto, modernidade e localização privilegiada!</p>
+    <div class="hero-content">
+      <h1>Jooy Lúmen</h1>
+      <p>O seu apartamento de alto padrão em Campo Grande</p>
+      <a href="#contato" class="btn">Quero Saber Mais</a>
+    </div>
   </header>
 
-  <section>
-    <h2>Cadastre-se e receba mais informações</h2>
+  <section id="sobre">
+    <h2>Por que escolher o Jooy Lúmen?</h2>
+    <p>Com arquitetura contemporânea, localização privilegiada e lazer completo, o Jooy Lúmen oferece conforto e segurança para você e sua família.</p>
+    <div class="features">
+      <div class="feature-item">
+        <img src="https://jooylumen.com.br/assets/icon-suite.svg" alt="Suíte">
+        <h3>2 Quartos, sendo 1 suíte</h3>
+      </div>
+      <div class="feature-item">
+        <img src="https://jooylumen.com.br/assets/icon-garage.svg" alt="Garagem">
+        <h3>1 Vaga de Garagem</h3>
+      </div>
+      <div class="feature-item">
+        <img src="https://jooylumen.com.br/assets/icon-varanda.svg" alt="Varanda">
+        <h3>Varanda Gourmet Integrada</h3>
+      </div>
+      <div class="feature-item">
+        <img src="https://jooylumen.com.br/assets/icon-pool.svg" alt="Piscina">
+        <h3>Piscina Adulto e Infantil</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="gallery">
+      <img src="https://jooylumen.com.br/assets/img1.jpg" alt="Sala">
+      <img src="https://jooylumen.com.br/assets/img2.jpg" alt="Cozinha">
+      <img src="https://jooylumen.com.br/assets/img3.jpg" alt="Varanda">
+      <img src="https://jooylumen.com.br/assets/img4.jpg" alt="Piscina">
+    </div>
+  </section>
+
+  <section id="plantas">
+    <h2>Plantas</h2>
+    <div class="floorplans">
+      <img src="https://jooylumen.com.br/assets/plantas.jpg" alt="Planta Apartamento">
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale com o Corretor</h2>
     <form action="mailto:autofacilexterna@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="text" name="nome" placeholder="Seu nome completo" required>
       <input type="email" name="email" placeholder="Seu e-mail" required>
       <input type="tel" name="telefone" placeholder="Seu WhatsApp" required>
-      <textarea name="mensagem" rows="4" placeholder="Escreva sua dúvida ou interesse"></textarea>
-      <button type="submit">Quero Saber Mais</button>
+      <textarea name="mensagem" rows="4" placeholder="Escreva sua dúvida ou interesse" required></textarea>
+      <button type="submit" class="btn">Enviar Mensagem</button>
     </form>
+    <p style="margin-top: 15px;"><strong>Márcio Flores - CRECI 15639</strong><br>
+    WhatsApp: <a href="https://wa.me/5567991304464" target="_blank">(67) 99130-4464</a><br>
+    Email: <a href="mailto:autofacilexterna@gmail.com">autofacilexterna@gmail.com</a></p>
   </section>
 
-  <section>
-    <h2>Detalhes do Empreendimento</h2>
-    <ul>
-      <li>Apartamentos de 58m² com 2 quartos (1 suíte)</li>
-      <li>1 vaga de garagem</li>
-      <li>Varanda integrada, sala e cozinha planejada</li>
-      <li>Área de lazer com piscina, pet place, lavanderia, coworking e mais</li>
-      <li>Localização: Vila Vilas Boas, Campo Grande - MS</li>
-    </ul>
-  </section>
+  <a href="https://wa.me/5567991304464" target="_blank" class="whatsapp-fixed">
+    <img src="https://www.freepnglogos.com/uploads/whatsapp-logo-png-hd-2.png" alt="WhatsApp">
+  </a>
 
-  <section>
-    <h2>Fale direto com o corretor</h2>
-    <p><strong>Márcio Flores - CRECI 15639</strong></p>
-    <p>WhatsApp: <a href="https://wa.me/5567991304464" target="_blank">(67) 99130-4464</a></p>
-    <p>Email: <a href="mailto:autofacilexterna@gmail.com">autofacilexterna@gmail.com</a></p>
-  </section>
-
-  <div class="footer">
-    &copy; 2025 Márcio Flores - Todos os direitos reservados.
-  </div>
+  <footer>
+    &copy; 2025 Márcio Flores - CRECI 15639 | Todos os direitos reservados.
+  </footer>
 </body>
 </html>
