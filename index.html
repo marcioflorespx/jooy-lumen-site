@@ -1,52 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jooy Lúmen - Apartamentos de Alto Padrão</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jooy Lúmen - Lançamento Exclusivo</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; }
-    a { color: inherit; text-decoration: none; }
-    header { background: url('https://jooylumen.com.br/assets/hero.jpg') center/cover no-repeat; height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; }
-    header::after { content: ''; position: absolute; inset: 0; background: rgba(0, 40, 85, 0.6); }
-    header .hero-content { position: relative; text-align: center; color: #fff; padding: 0 20px; }
-    header h1 { font-size: 3rem; margin-bottom: 1rem; }
-    header p { font-size: 1.2rem; margin-bottom: 1.5rem; }
-    .btn { display: inline-block; background-color: #ff6600; color: #fff; padding: 15px 30px; font-size: 1rem; border-radius: 5px; transition: background 0.3s; }
-    .btn:hover { background-color: #e65500; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .feature-item { background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: center; }
-    .feature-item img { width: 60px; margin-bottom: 15px; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; }
-    .gallery img { width: 100%; height: auto; border-radius: 8px; }
-    .floorplans { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
-    .floorplans img { width: 100%; max-width: 400px; border-radius: 8px; }
-    .whatsapp-fixed { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
-    .whatsapp-fixed img { width: 60px; height: 60px; }
-    footer { background: #002855; color: #fff; text-align: center; padding: 20px; }
-    form { display: grid; gap: 15px; }
-    input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; }
+    header {
+      background: url('https://jooylumen.com.br/assets/hero.jpg') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 40, 85, 0.6);
+    }
+    .hero-content {
+      position: relative;
+      color: #fff;
+      z-index: 2;
+      padding: 0 20px;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      background: #ff6600;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #e05500;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .feature-item {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .feature-item img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
     textarea { resize: vertical; }
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .whatsapp-fixed img {
+      width: 60px;
+      height: 60px;
+    }
+    footer {
+      background: #002855;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <div class="hero-content">
       <h1>Jooy Lúmen</h1>
-      <p>O seu apartamento de alto padrão em Campo Grande</p>
+      <p>O lançamento mais moderno de Campo Grande-MS</p>
       <a href="#contato" class="btn">Quero Saber Mais</a>
     </div>
   </header>
 
-  <section id="sobre">
-    <h2>Por que escolher o Jooy Lúmen?</h2>
-    <p>Com arquitetura contemporânea, localização privilegiada e lazer completo, o Jooy Lúmen oferece conforto e segurança para você e sua família.</p>
+  <section>
+    <h2>Por que investir no Jooy Lúmen?</h2>
+    <p>Localização privilegiada, conforto, segurança e lazer completo!</p>
     <div class="features">
       <div class="feature-item">
         <img src="https://jooylumen.com.br/assets/icon-suite.svg" alt="Suíte">
-        <h3>2 Quartos, sendo 1 suíte</h3>
+        <h3>2 Quartos, 1 Suíte</h3>
       </div>
       <div class="feature-item">
         <img src="https://jooylumen.com.br/assets/icon-garage.svg" alt="Garagem">
@@ -54,7 +132,7 @@
       </div>
       <div class="feature-item">
         <img src="https://jooylumen.com.br/assets/icon-varanda.svg" alt="Varanda">
-        <h3>Varanda Gourmet Integrada</h3>
+        <h3>Varanda Gourmet</h3>
       </div>
       <div class="feature-item">
         <img src="https://jooylumen.com.br/assets/icon-pool.svg" alt="Piscina">
@@ -63,20 +141,13 @@
     </div>
   </section>
 
-  <section id="galeria">
-    <h2>Galeria de Fotos</h2>
+  <section>
+    <h2>Galeria</h2>
     <div class="gallery">
-      <img src="https://jooylumen.com.br/assets/img1.jpg" alt="Sala">
-      <img src="https://jooylumen.com.br/assets/img2.jpg" alt="Cozinha">
-      <img src="https://jooylumen.com.br/assets/img3.jpg" alt="Varanda">
-      <img src="https://jooylumen.com.br/assets/img4.jpg" alt="Piscina">
-    </div>
-  </section>
-
-  <section id="plantas">
-    <h2>Plantas</h2>
-    <div class="floorplans">
-      <img src="https://jooylumen.com.br/assets/plantas.jpg" alt="Planta Apartamento">
+      <img src="https://jooylumen.com.br/assets/img1.jpg" alt="Imagem 1">
+      <img src="https://jooylumen.com.br/assets/img2.jpg" alt="Imagem 2">
+      <img src="https://jooylumen.com.br/assets/img3.jpg" alt="Imagem 3">
+      <img src="https://jooylumen.com.br/assets/img4.jpg" alt="Imagem 4">
     </div>
   </section>
 
@@ -84,22 +155,25 @@
     <h2>Fale com o Corretor</h2>
     <form action="mailto:autofacilexterna@gmail.com" method="post" enctype="text/plain">
       <input type="text" name="nome" placeholder="Seu nome completo" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="tel" name="telefone" placeholder="Seu WhatsApp" required>
-      <textarea name="mensagem" rows="4" placeholder="Escreva sua dúvida ou interesse" required></textarea>
-      <button type="submit" class="btn">Enviar Mensagem</button>
+      <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+      <input type="tel" name="telefone" placeholder="WhatsApp com DDD" required>
+      <textarea name="mensagem" placeholder="Mensagem ou dúvida"></textarea>
+      <button type="submit" class="btn">Enviar</button>
     </form>
-    <p style="margin-top: 15px;"><strong>Márcio Flores - CRECI 15639</strong><br>
-    WhatsApp: <a href="https://wa.me/5567991304464" target="_blank">(67) 99130-4464</a><br>
-    Email: <a href="mailto:autofacilexterna@gmail.com">autofacilexterna@gmail.com</a></p>
+    <p style="margin-top: 15px;">
+      <strong>Márcio Flores - CRECI 15639</strong><br>
+      WhatsApp: <a href="https://wa.me/5567991304464" target="_blank">(67) 99130-4464</a><br>
+      E-mail: <a href="mailto:autofacilexterna@gmail.com">autofacilexterna@gmail.com</a>
+    </p>
   </section>
 
-  <a href="https://wa.me/5567991304464" target="_blank" class="whatsapp-fixed">
+  <a href="https://wa.me/5567991304464" class="whatsapp-fixed" target="_blank">
     <img src="https://www.freepnglogos.com/uploads/whatsapp-logo-png-hd-2.png" alt="WhatsApp">
   </a>
 
   <footer>
-    &copy; 2025 Márcio Flores - CRECI 15639 | Todos os direitos reservados.
+    &copy; 2025 Márcio Flores | Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
